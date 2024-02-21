@@ -1,0 +1,6 @@
+<h1>Message board Homepage</h1>
+<ul>
+  {% for post in all_posts_list %}<!--   List view nos retorna automaticamente una variable llamada object_list que podemos iterar-->
+        <li>{{post.text}}</li>
+    {% endfor %}
+</ul>
